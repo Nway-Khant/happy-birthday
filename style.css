@@ -45,6 +45,27 @@ body {
   padding: 8px 0;
 }
 
+#play-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#play-button:hover {
+  background-color: #e91e63;
+}
+
+
 /* Responsive for small phones */
 @media (max-width: 480px) {
   .caption {

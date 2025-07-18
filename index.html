@@ -12,12 +12,24 @@
     <div class="caption">🎉 Happy Birthday! 🎂</div>
   </div>
 
+  <!-- Play Music Button -->
+  <button id="play-button">🔊 Play Music</button>
+
   <!-- Background Music -->
-  <audio id="bg-music" autoplay loop>
+  <audio id="bg-music" loop>
     <source src="birthday.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
 
   <script src="script.js"></script>
+  <script>
+    const playButton = document.getElementById("play-button");
+    const music = document.getElementById("bg-music");
+
+    playButton.addEventListener("click", () => {
+      music.play();
+      playButton.style.display = "none"; // hide after playing
+    });
+  </script>
 </body>
 </html>
